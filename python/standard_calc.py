@@ -46,10 +46,6 @@ def is_angle_between(first_angle, middle_angle, second_angle):
         first_angle = temp
 
     if abs(first_angle - second_angle) <= 180:
-        return(second_angle <= middle_angle <= first_angle)
+        return (second_angle <= middle_angle <= first_angle)
     else:
-        return(middle_angle>=first_angle or middle_angle<=second_angle)
-
-
-
-
+        return (middle_angle >= first_angle or middle_angle <= second_angle)
