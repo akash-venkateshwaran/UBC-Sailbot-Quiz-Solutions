@@ -49,4 +49,4 @@ def is_angle_between(first_angle, middle_angle, second_angle):
         return (second_angle <= middle_angle <= first_angle)
     else:
         return (middle_angle >= first_angle or middle_angle <= second_angle)
-    
+
