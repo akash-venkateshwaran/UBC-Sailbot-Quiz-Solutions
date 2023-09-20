@@ -36,36 +36,36 @@ def test_bound_basic7():
 
 
 def test_between_basic1():
-    assert is_angle_between(0, 1, 2) == True
+    assert is_angle_between(0, 1, 2) is True
 
 
 def test_between_basic2():
-    assert is_angle_between(10, 10, 2) == True
+    assert is_angle_between(10, 10, 2) is True
 
 
 def test_between_inv1():
-    assert is_angle_between(10, 1, -20) == True
+    assert is_angle_between(10, 1, -20) is True
 
 
 def test_between_inv2():
-    assert is_angle_between(-20, 1, 10) == True
+    assert is_angle_between(-20, 1, 10) is True
 
 
 def test_between_ext1():
-    assert is_angle_between(90, 1, -90) == True
+    assert is_angle_between(90, 1, -90) is True
 
 
 def test_between_ext2():
-    assert is_angle_between(0, -90 , -180) == True
+    assert is_angle_between(0, -90, -180) is True
 
 
 def test_between_ext3():
-    assert is_angle_between(0, 90 , 180) == False
+    assert is_angle_between(0, 90, 180) is False
 
 
 def test_between_ext4():
-    assert is_angle_between(120, 180 , -120) == True
+    assert is_angle_between(120, 180, -120) is True
 
 
 def test_between_ext5():
-    assert is_angle_between(180, 0 , -180) == False
+    assert is_angle_between(180, 0, -180) is False
